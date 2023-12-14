@@ -1,13 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
-   
-    .headerHover{
-        @apply px-2 border border-transparent hover:border-white cursor-pointer duration-100  h-[80%] flex items-center
-    }
+  .headerHover {
+    @apply px-2 border border-transparent hover:border-white cursor-pointer duration-100  h-[80%] flex items-center;
+  }
+  .sideNavLink {
+    @apply flex items-center justify-between hover:bg-zinc-200 px-6 py-2 cursor-pointer;
+  }
+  .footerLink {
+    @apply text-sm font-titleFont tracking-wide hover:text-gray-100 cursor-pointer hover:underline duration-150;
+  }
+  .footerBottom {
+    @apply flex items-center justify-center border-gray-500 border hover:border-amazonYellow cursor-pointer duration-200 px-[18px]  rounded-md py-[6px] ;
+  }
+ 
 }

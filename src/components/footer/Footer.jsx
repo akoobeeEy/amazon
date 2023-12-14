@@ -1,8 +1,17 @@
+import FooterBack from "./FooterBack";
+import FooterBottom from "./FooterBottom";
+import FooterMiddle from "./FooterMiddle";
+import FooterTop from "./FooterTop";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer className="font-titleFont">
+      <FooterTop />
+      <FooterBack />
+      <FooterMiddle />
+      <FooterBottom />
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

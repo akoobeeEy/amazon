@@ -21,13 +21,16 @@ export default {
       },
       colors:{
         amazonBlue: "#131921",
+        amazonLightBlue: "#232f3e",
         amazonGreen: "#00453e",
+        amazonLightGreen: "#195851",
         amazonLight: "#232F3E",
         amazonYellow: "#febd69",
         whiteText: "#ffffff",
         lightText: "#ccc",
         quantity_box: "#F0F2F2",
-        footerBottom: "#131A22"
+        footerBottom: "#131A22",
+        bgScreen: "rgba(0,0,0,.8)",
       },
       boxShadow:{
         testShadow: "0px 0px 32px 1px rgba(199,199,199,1)",

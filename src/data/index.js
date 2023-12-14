@@ -82,3 +82,4 @@ export const headerItems = [
         _id: "27", title: "Women's Fashion",
       },
 ]
+

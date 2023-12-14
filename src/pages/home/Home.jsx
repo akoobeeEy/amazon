@@ -1,7 +1,12 @@
+import Products from "../products/Products"
+import Banner from "./Banner"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Banner/>
+      <Products/>
+    </div>
   )
 }
 
