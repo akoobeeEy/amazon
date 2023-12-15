@@ -1,16 +1,30 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 import { Layout } from "./components";
-import { Home } from "./pages";
+import { Home, Cart,  Registration, SignIn } from "./pages";
+import { getProducts } from "./api/api";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Home />} loader={getProducts} />
+          <Route path="cart" element={<Cart />} />
         </Route>
-      </Routes>
-    </BrowserRouter>
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/registration" element={<Registration />} />
+      </Route>
+    )
+  );
+  return (
+    <div className="font-bodyFont bg-gray-100">
+      <RouterProvider router={router}></RouterProvider>
+    </div>
   );
 }
 

@@ -6,7 +6,7 @@
 
 @layer components {
   .headerHover {
-    @apply px-2 border border-transparent hover:border-white cursor-pointer duration-100  h-[80%] flex items-center;
+    @apply px-2 border border-transparent hover:border-white cursor-pointer duration-100  h-[100%] flex items-center;
   }
   .sideNavLink {
     @apply flex items-center justify-between hover:bg-zinc-200 px-6 py-2 cursor-pointer;
@@ -15,7 +15,10 @@
     @apply text-sm font-titleFont tracking-wide hover:text-gray-100 cursor-pointer hover:underline duration-150;
   }
   .footerBottom {
-    @apply flex items-center justify-center border-gray-500 border hover:border-amazonYellow cursor-pointer duration-200 px-[18px]  rounded-md py-[6px] ;
+    @apply flex items-center justify-center border-gray-500 border hover:border-amazonYellow cursor-pointer duration-200 px-[18px]  rounded-md py-[6px];
   }
- 
+  .productLi {
+    @apply text-gray-600 hover:text-black text-sm font-medium border-b-[1px]
+     border-b-gray-400 hover:border-b-gray-700 flex items-center justify-end gap-2 hover:cursor-pointer duration-300 w-full;
+  }
 }
